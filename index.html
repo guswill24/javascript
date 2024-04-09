@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <?!= include('CSS');?>
+ 
+</head>
+
+<body>
+  <?!= include('menu');?>  
+   <div class="container-fluid">
+
+    <!--Manejo submenus-->
+    <div class="row">
+      <div class="col-4">
+        <div id="list-example" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-item-1">¿Qué es JavaScript?</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-2">Características principales</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3">Usos comunes de JavaScript</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-4">Historia de JavaScript</a>
+        </div>
+        <center>
+          <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/javascript_vertical_logo_icon_168606.png" alt="Logo de JavaScript" width="50%">
+        </center>
+      </div>
+      <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+          tabindex="0">
+          <h4 id="list-item-1">¿Qué es JavaScript?</h4>
+          <p style="text-align: justify">JavaScript es un lenguaje de programación ampliamente utilizado que permite
+            agregar interactividad, dinamismo y características avanzadas a sitios web y aplicaciones web. Fue
+            desarrollado por Brendan Eich en 1995 y se ha convertido en uno de los lenguajes de programación más
+            populares y esenciales en el mundo del desarrollo web.
+          </p>
+          <h4 id="list-item-2">Características principales</h4>
+          <p style="text-align: justify">
+          <ul>
+            <li>Interpretado: JavaScript es un lenguaje interpretado, lo que significa que no es necesario compilar e
+              código antes de ejecutarlo. Los navegadores web pueden leer y ejecutar el código JavaScript directamente.
+            </li>
+            <li>Orientado a objetos: JavaScript es un lenguaje orientado a objetos, lo que facilita la organización y
+              estructuración del código mediante el uso de objetos y clases.</li>
+            <li>Multiplataforma: JavaScript es compatible con todos los principales navegadores web y sistemas
+              operativos, lo que lo convierte en una excelente opción para el desarrollo de aplicaciones web y móviles.
+            </li>
+            <li>Event-driven: JavaScript permite la creación de aplicaciones interactivas utilizando eventos, como clics
+              de ratón y pulsaciones de teclas, para controlar el flujo de la ejecución del código.</li>
+            <li>Dinámico: JavaScript permite a los desarrolladores modificar el contenido y la estructura de una página
+              web en tiempo real, sin necesidad de recargar la página completa.</li>
+          </ul>
+          </p>
+          <h4 id="list-item-3">Usos comunes de JavaScript</h4>
+          <ul>
+            <li>Crear y controlar animaciones y efectos visuales en sitios web.</li>
+            <li>Validación de formularios y entrada de datos en tiempo real.</li>
+            <li>Crear aplicaciones web interactivas y de alto rendimiento, como juegos y aplicaciones de colaboración.
+            </li>
+            <li>Desarrollo de aplicaciones móviles y de escritorio utilizando tecnologías basadas en JavaScript, como
+              React Native y Electron.</li>
+            <li>Desarrollo del lado del servidor con tecnologías como Node.js.</li>
+          </ul>
+
+          <h4 id="list-item-4">Historia de JavaScript</h4>
+          <p style="text-align: justify">JavaScript fue creado por Brendan Eich en 1995, mientras trabajaba en Netscape
+            Communications Corporation.
+            Originalmente se llamó Mocha, luego se renombró a LiveScript y finalmente a JavaScript. A pesar del
+            nombre,no tiene relación directa con el lenguaje de programación Java.</p>
+
+          <p style="text-align: justify">Netscape y Sun Microsystems decidieron unir fuerzas y promocionar JavaScript
+            como un lenguaje de scripting complementario a Java. En 1996, Microsoft lanzó su propio dialecto de
+            JavaScript llamado JScript, que se incluyó en Internet Explorer 3.0.</p>
+
+          <p style="text-align: justify">En 1997, se presentó la propuesta de estandarizar JavaScript al organismo de
+            estandarización ECMA
+            International. La primera edición del estándar, conocida como ECMAScript, se publicó en 1998. Desde
+            entonces, ECMAScript ha pasado por varias revisiones y actualizaciones, siendo la versión más reciente
+            ECMAScript 2022 (ES2022).</p>
+
+          <p style="text-align: justify">JavaScript ha crecido significativamente desde sus inicios y ahora se utiliza
+            en una amplia variedad de aplicaciones, desde navegadores web hasta servidores, dispositivos móviles y más.
+            La evolución de JavaScript ha sido impulsada en gran medida por la comunidad de desarrolladores y las
+            mejoras en los motores de JavaScript de los navegadores web.</p>
+
+        </div>
+      </div>
+    </div>
+    <!--Fin manejo submenus-->
+    <!-- Pie de página -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Aprendiendo JavaScript</p>
+      </div>
+    </footer>
+  </div>
+
+  <?!= include('JS');?>
+
+</body>
+
+</html>

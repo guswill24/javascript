@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <?!= include('CSS');?>
+</head>
+
+<body>
+  <?!= include('menu');?>
+  <div class="container-fluid">
+    <!--Manejo submenus-->
+    <div class="row">
+      <div class="col-4">
+        <div id="list-example" class="list-group">
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=2">Variables en JavaScript</a>
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=3">Tipos de Datos</a>
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=50">Coerc&iacute;on de Datos</a>
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=50">Operadores</a>
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=50">Ejercicios</a>          
+        </div>
+        <center>
+          <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/javascript_vertical_logo_icon_168606.png" alt="Logo de JavaScript" width="50%">
+        </center>
+      </div>
+      <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+          tabindex="0">
+          <!--Contenido nuevo -->
+          <h1>Variables en JavaScript</h1>
+
+          <p>Las variables son elementos esenciales en cualquier lenguaje de programación. En JavaScript, las variables
+            se utilizan para almacenar valores y hacer referencia a ellos en nuestro código.</p>
+
+          <h2>Declaración de variables</h2>
+
+          <p>En JavaScript, podemos declarar variables usando las palabras clave <code>var</code>, <code>let</code>, o
+            <code>const</code>. La diferencia entre estas tres es cómo manejan el alcance y la asignación de valores.
+          </p>
+
+          <h3><code>var</code></h3>
+
+          <p>La palabra clave <code>var</code> se utiliza para declarar variables globales o locales en una función sin
+            importar el bloque en el que se declare.</p>
+
+          <pre><code>var miVariable = "Hola mundo";
+</code></pre>
+
+          <p>En el ejemplo anterior, la variable <code>miVariable</code> es declarada en el ámbito global. Esto
+            significa que la variable <code>miVariable</code> puede ser accedida desde cualquier parte del código.
+            También es posible declarar variables e inicializarlas o asignarle valores más adelante.</p>
+
+          <pre><code>// Declaración de variables
+var nombre;
+
+// Asignación de valores
+nombre = "Juan";
+
+// Declaración de variables
+var edad, programas, numeroIdentificacion;
+
+// Asignación de valores
+edad = 30;
+programas = true;
+numeroIdentificacion = 123456789;
+</code></pre>
+
+          <h3><code>let</code></h3>
+
+          <p>La palabra clave <code>let</code> se utiliza para declarar variables locales en un bloque, declaración o
+            expresión, y solo está disponible dentro del bloque en el que se declara.</p>
+
+          <pre><code>let miVariable = "Hola mundo";
+</code></pre>
+
+          <h3><code>const</code></h3>
+
+          <p>La palabra clave <code>const</code> se utiliza para declarar variables de solo lectura que no pueden ser
+            reasignadas. El valor de una variable <code>const</code> no puede cambiar a lo largo de la ejecución del
+            programa.</p>
+
+          <pre><code>const miVariable = "Hola mundo";
+</code></pre>
+
+          <h3>Ejemplo</h3>
+
+          <p>Cuando usar <code>var</code>, <code>let</code> o <code>const</code>?</p>
+
+          <p>Depende de la situación. Si deseas declarar una variable global, usa <code>var</code>. Si deseas declarar
+            una variable local, usa <code>let</code>. Si deseas declarar una variable de solo lectura, usa
+            <code>const</code>.</p>
+
+          <pre><code>// Declaración de variables
+var nombre = "Juan";
+let paisDeResidencia = "España";
+const edad = 30;
+var programas = true;
+const numeroIdentificacion = 123456789;
+let bandasFavoritas = ["The Beatles", "Led Zeppelin", "Queen"];
+
+// Creación de objeto
+const persona = {
+  nombre: nombre,
+  paisDeResidencia: paisDeResidencia,
+  edad: edad,
+  programas: programas,
+  numeroIdentificacion: numeroIdentificacion,
+  bandasFavoritas: bandasFavoritas,
+};
+
+console.log(persona);
+</code></pre>
+
+          <h2>Buenas prácticas</h2>
+
+          <ol>
+            <li>Utiliza nombres descriptivos para tus variables. Por ejemplo, <code>nombre</code> es mejor que
+              <code>n</code>.</li>
+            <li>Utiliza nombres que sean cortos y concisos.</li>
+            <li>Utiliza nombres que sean fáciles de escribir, leer, pronunciar, recordar y fáciles de buscar en el
+              código.</li>
+            <li>Utiliza nombres en inglés en lo posible.</li>
+            <li>Las variables no deben contener espacios y no pueden contener caracteres especiales.</li>
+            <li>Las variables no deben contener palabras reservadas de JavaScript.</li>
+            <li>Las variables no deben contener nombres de funciones, métodos, clases, objetos, etc.</li>
+            <li>Las variables no deben iniciar con números, pero pueden contenerlos.</li>
+            <li>Los nombres de las variables deben ser en minúsculas, a menos que sean constantes.</li>
+            <li>Los tipos de escritura de las variables deben ser camelCase o snake_case.</li>
+          </ol>
+          <!-- Fin contenido nuevo-->
+
+        </div>
+      </div>
+    </div>
+    <!--Fin manejo submenus-->
+
+  </div>
+
+  <?!= include('JS');?>
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aprendiendo JavaScript</p>
+    </div>
+  </footer>
+  <!-- Fin pie de página -->
+</body>
+
+</html>

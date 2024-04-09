@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <?!= include('CSS');?>
+</head>
+
+<body>
+  <?!= include('menu');?>
+  <div class="container-fluid">
+    <!--Manejo submenus-->
+    <div class="row">
+      <div class="col-4">
+        <div id="list-example" class="list-group">
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=2">Variables en JavaScript</a>
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=3">Tipos de Datos</a>
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=50">Coerc&iacute;on de Datos</a>
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=50">Operadores</a>
+          <a class="list-group-item list-group-item-action" href="<?= pubUrl ?>?p=50">Ejercicios</a>          
+        </div>
+        <center>
+          <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/javascript_vertical_logo_icon_168606.png" alt="Logo de JavaScript" width="50%">
+        </center>
+      </div>
+      <div class="col-8">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+          tabindex="0">
+          <!--Contenido nuevo -->
+          <h1>Tipos de Datos</h1>
+
+          <!-- Fin contenido nuevo-->
+
+        </div>
+      </div>
+    </div>
+    <!--Fin manejo submenus-->
+
+  </div>
+
+  <?!= include('JS');?>
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Aprendiendo JavaScript</p>
+    </div>
+  </footer>
+  <!-- Fin pie de página -->
+</body>
+
+</html>
